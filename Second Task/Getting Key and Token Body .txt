@@ -1,0 +1,116 @@
+{
+    "id": "6391e22d163f6c01e27d19ad",
+    "aaId": "6391e22c5fce844d606d6553",
+    "activityBlocked": false,
+    "avatarHash": "3a36fdb12b59c63e96730b6f602c6785",
+    "avatarUrl": "https://trello-members.s3.amazonaws.com/6391e22d163f6c01e27d19ad/3a36fdb12b59c63e96730b6f602c6785",
+    "bio": "",
+    "bioData": null,
+    "confirmed": true,
+    "fullName": "Mohamed Selety",
+    "idEnterprise": null,
+    "idEnterprisesDeactivated": [],
+    "idMemberReferrer": null,
+    "idPremOrgsAdmin": [],
+    "initials": "MS",
+    "memberType": "normal",
+    "nonPublic": {},
+    "nonPublicAvailable": true,
+    "products": [],
+    "url": "https://trello.com/mohamedselety",
+    "username": "mohamedselety",
+    "status": "disconnected",
+    "aaBlockSyncUntil": null,
+    "aaEmail": null,
+    "aaEnrolledDate": null,
+    "avatarSource": "atlassianAccount",
+    "credentialsRemovedCount": 0,
+    "domainClaimed": null,
+    "email": "m.a.selety@gmail.com",
+    "goldSunsetFreeTrialIdOrganization": null,
+    "gravatarHash": "1bf6fc3fd5b54bb3e61f2b13fccc6469",
+    "idBoards": [
+        "6391e2a30482820092abf9d2",
+        "6391e2d5bbb897015001d192",
+        "6391e30e579f680341f08d7c"
+    ],
+    "idOrganizations": [
+        "6391e27e9a5816020cee0fa5"
+    ],
+    "idEnterprisesAdmin": [],
+    "limits": {
+        "boards": {
+            "totalPerMember": {
+                "status": "ok",
+                "disableAt": 4500,
+                "warnAt": 3600
+            }
+        },
+        "orgs": {
+            "totalPerMember": {
+                "status": "ok",
+                "disableAt": 850,
+                "warnAt": 680
+            }
+        }
+    },
+    "loginTypes": [
+        "atlassian"
+    ],
+    "marketingOptIn": {
+        "optedIn": true,
+        "date": "2022-12-08T13:10:06.812Z"
+    },
+    "messagesDismissed": [],
+    "oneTimeMessagesDismissed": [
+        "sent-possible-new-signup-event",
+        "close-menu-of-first-board"
+    ],
+    "prefs": {
+        "privacy": {
+            "fullName": "public",
+            "avatar": "public"
+        },
+        "sendSummaries": true,
+        "minutesBetweenSummaries": 60,
+        "minutesBeforeDeadlineToNotify": 1440,
+        "colorBlind": false,
+        "locale": "en-US"
+    },
+    "trophies": [],
+    "uploadedAvatarHash": null,
+    "uploadedAvatarUrl": null,
+    "premiumFeatures": [
+        "additionalBoardBackgrounds",
+        "additionalStickers",
+        "customBoardBackgrounds",
+        "customEmoji",
+        "customStickers",
+        "plugins"
+    ],
+    "isAaMastered": true,
+    "ixUpdate": "23",
+    "boards": [
+        {
+            "id": "6391e2a30482820092abf9d2",
+            "name": "First board",
+            "closed": false,
+            "idOrganization": "6391e27e9a5816020cee0fa5",
+            "pinned": false
+        },
+        {
+            "id": "6391e2d5bbb897015001d192",
+            "name": "Second Bored",
+            "closed": false,
+            "idOrganization": "6391e27e9a5816020cee0fa5",
+            "pinned": false
+        },
+        {
+            "id": "6391e30e579f680341f08d7c",
+            "name": "Third Bored",
+            "closed": false,
+            "idOrganization": "6391e27e9a5816020cee0fa5",
+            "pinned": false
+        }
+    ]
+}

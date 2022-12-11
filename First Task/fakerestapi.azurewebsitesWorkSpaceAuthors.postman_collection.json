@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "a90ecc02-57ed-48c2-b23e-4ce0d08b5bc1",
+		"name": "Authors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24721847"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "Get Authers",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.status).to.equal(\"OK\")\r",
+									"})\r",
+									"pm.test(\"Status Code Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.code).to.equal(200)\r",
+									"})\r",
+									"pm.test(\" First object Response Body Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json()[0].id).to.equal(1)\r",
+									"})\r",
+									"pm.test(\" Second object Response Body Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json()[0].firstName).to.equal(\"First Name 1\")\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/v1/Authors",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Authers  Books By  books Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.status).to.equal(\"OK\")\r",
+									"})\r",
+									"pm.test(\"Status Code Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.code).to.equal(200)\r",
+									"})\r",
+									"pm.test(\"Book id test first object \", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json()[0].idBook).to.equal(3)\r",
+									"})\r",
+									"pm.test(\"Book id test Second object\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json()[1].idBook).to.equal(3)\r",
+									"})\r",
+									"pm.test(\"Book id test Third object\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json()[2].idBook).to.equal(3)\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/v1/Authors/authors/books/3",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Authors",
+								"authors",
+								"books",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Authers By id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.status).to.equal(\"OK\")\r",
+									"})\r",
+									"pm.test(\"Status Code Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.code).to.equal(200)\r",
+									"})\r",
+									"pm.test(\"id book Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().idBook).to.equal(4)\r",
+									"})\r",
+									"pm.test(\"First Name Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().firstName).to.equal(\"First Name 10\")\r",
+									"})\r",
+									"pm.test(\"Last Name Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().lastName).to.equal(\"Last Name 10\")\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/v1/Authors/10",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Authors",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Add New  Auther",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.status).to.equal(\"OK\")\r",
+									"})\r",
+									"pm.test(\"Status Code Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.code).to.equal(200)\r",
+									"})\r",
+									"pm.test(\"Response Body id Test \", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().id).to.equal(800)\r",
+									"})\r",
+									"pm.test(\"Response Body FirstName Test \", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().firstName).to.equal(\"Mohamed\")\r",
+									"})\r",
+									"pm.test(\"Response Body LastName Test \", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().lastName).to.equal(\"Selety\")\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 800,\r\n  \"idBook\": 6,\r\n  \"firstName\": \"Mohamed\",\r\n  \"lastName\": \"Selety\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/v1/Authors",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Authors"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put",
+			"item": [
+				{
+					"name": "Update Auther",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.status).to.equal(\"OK\")\r",
+									"})\r",
+									"pm.test(\"Status Code Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.code).to.equal(200)\r",
+									"})\r",
+									"pm.test(\"id Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().id).to.equal(10)\r",
+									"})\r",
+									"pm.test(\"id book Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().idBook).to.equal(50)\r",
+									"})\r",
+									"pm.test(\"First Name Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().firstName).to.equal(\"Mohamed\")\r",
+									"})\r",
+									"pm.test(\"Last Name Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.json().lastName).to.equal(\"Selety\")\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 10,\r\n  \"idBook\": 50,\r\n  \"firstName\": \"Mohamed\",\r\n  \"lastName\": \"Selety\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/v1/Authors/10",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Authors",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "Delete Auther",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.status).to.equal(\"OK\")\r",
+									"})\r",
+									"pm.test(\"Status Code Test\", function(){\r",
+									"\r",
+									"    pm.expect(pm.response.code).to.equal(200)\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/v1/Authors/500",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Authors",
+								"500"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

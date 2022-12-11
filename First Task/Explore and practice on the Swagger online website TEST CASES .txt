@@ -1,0 +1,51 @@
+ API: GET /api/v1/Authors
+ Test Case: response should be 200 OK
+ Expected Result: 200 OK
+ Actual Result: 200 OK
+ Status: Pass
+**************************************************************************************************
+ API: POST /api/v1/Authors
+ Test Case1: response should be 201 Created
+ Expected Result: 201 Created
+ Actual Result: 201 Created
+ Status: Pass
+ ------------
+ Test Case2: firstname & lastname should be mandatory
+ Expected Result: Code Should be 400 Error: Bad Request
+ Actual Result: Code is 400 Error: Bad Request
+ Status: Pass
+**************************************************************************************************
+ API: GET /api​/v1​/Authors​/authors​/books​/{idBook}
+  Test Case1: Searching with valid idBook should return relative data in response body
+ Expected Result: ID Should Be 3 
+ Actual Result: ID is 3 
+ Status: Pass
+ --------------
+ Test Case2: response should be 200 OK
+ Expected Result: 200 OK
+ Actual Result: 200 OK
+ Status: Pass
+**************************************************************************************************
+ API: PUT /api​/v1​/Authors​/{id}
+ Test Case1: Author's data in response is updated successfully.
+ Expected Result: FirstName Should Be Mohamed and LastName Should be Selety
+ Actual Result: FirstName is Mohamed LastName is Selety 
+ Status: Pass
+ --------------
+ Test Case2: response should be 200 OK
+ Expected Result: 200 OK
+ Actual Result: 200 OK
+ Status: Pass
+**************************************************************************************************
+ API:GET /api​/v1​/Authors​/{id}
+ Test Case1: The author's FirstName and LastName is changed 
+ Expected Result: FirstName Should Be Mohamed and LastName Should be Selety
+ Actual Result: FirstName is First Name 4 LastName is Last Name 4 
+ Status: Faile
+**************************************************************************************************
+ API: DELETE /api​/v1​/Activities​/{id}
+ Test Case1: response should be 200 OK
+ Expected Result: 200 OK
+ Actual Result: 200 OK
+ Status: Pass
+**************************************************************************************************
